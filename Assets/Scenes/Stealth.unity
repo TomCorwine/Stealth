@@ -22512,7 +22512,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Priority: 128
   DopplerLevel: 1
@@ -51642,6 +51642,10 @@ Prefab:
     - target: {fileID: 400014, guid: f66596d606ed24da3b247c003018634a, type: 2}
       propertyPath: m_LocalRotation.w
       value: -.707106948
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: f66596d606ed24da3b247c003018634a, type: 2}
+      propertyPath: Loop
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f66596d606ed24da3b247c003018634a, type: 2}
