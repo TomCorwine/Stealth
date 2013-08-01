@@ -6,58 +6,59 @@ AnimatorController:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: PlayerAnimator
-  m_AnimatorEvents:
+  serializedVersion: 2
+  m_AnimatorParameters:
   - m_Name: Speed
     m_Type: 1
-    m_Min: 1.55574763
-    m_Max: 5.5
     m_DefaultVector: {x: 0, y: 0, z: 0}
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   - m_Name: Sneaking
     m_Type: 4
-    m_Min: -1
-    m_Max: 1
     m_DefaultVector: {x: 0, y: 0, z: 0}
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   - m_Name: Dead
     m_Type: 4
-    m_Min: -1
-    m_Max: 1
     m_DefaultVector: {x: 0, y: 0, z: 0}
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   - m_Name: Shouting
     m_Type: 4
-    m_Min: -1
-    m_Max: 1
     m_DefaultVector: {x: 0, y: 0, z: 0}
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-  m_Layers:
+    m_Controller: {fileID: 9100000}
+  m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
-    m_Type: 0
     m_StateMachine: {fileID: 110700000}
     m_Mask: {fileID: 0}
     m_BlendingMode: 0
     m_SyncedLayerIndex: -1
     m_StateMachineMotionSetIndex: 0
+    m_DefaultWeight: 0
     m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
   - serializedVersion: 3
     m_Name: Shouting
-    m_Type: 0
     m_StateMachine: {fileID: 110700002}
     m_Mask: {fileID: 101100000, guid: fc271d418a96e40b29d3b7352ca4b6ca, type: 2}
     m_BlendingMode: 0
     m_SyncedLayerIndex: -1
     m_StateMachineMotionSetIndex: 0
+    m_DefaultWeight: 0
     m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
 --- !u!206 &20600000
 BlendTree:
   m_ObjectHideFlags: 1
@@ -79,8 +80,8 @@ BlendTree:
     m_CycleOffset: 0
     m_IsAnim: 1
     m_Mirror: 0
-  m_BlendEvent: Speed
-  m_BlendEventY: speed
+  m_BlendParameter: Speed
+  m_BlendParameterY: speed
   m_MinThreshold: 1.55574763
   m_MaxThreshold: 5.5
   m_UseAutomaticThresholds: 0
@@ -386,26 +387,6 @@ StateMachine:
   - {fileID: 110203086}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
-  m_LocalTransitions:
-    data:
-      first: {fileID: 0}
-      second:
-      - {fileID: 110105009}
-    data:
-      first: {fileID: 110200000}
-      second:
-      - {fileID: 110105632}
-      - {fileID: 110188360}
-    data:
-      first: {fileID: 110247196}
-      second:
-      - {fileID: 110180156}
-      - {fileID: 110114209}
-    data:
-      first: {fileID: 110285815}
-      second:
-      - {fileID: 110115015}
-      - {fileID: 110133662}
   m_OrderedTransitions:
     data:
       first: {fileID: 0}
@@ -445,15 +426,6 @@ StateMachine:
   - {fileID: 110258146}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
-  m_LocalTransitions:
-    data:
-      first: {fileID: 110234652}
-      second:
-      - {fileID: 110114714}
-    data:
-      first: {fileID: 110258146}
-      second:
-      - {fileID: 110176219}
   m_OrderedTransitions:
     data:
       first: {fileID: 0}
