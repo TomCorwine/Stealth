@@ -36,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
         foreach (AccelerationEvent accEvent in Input.accelerationEvents) {
             acceleration += accEvent.acceleration * accEvent.deltaTime;
         }
-        print(acceleration);
     }
     
     
