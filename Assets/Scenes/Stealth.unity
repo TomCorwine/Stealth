@@ -56912,6 +56912,7 @@ GameObject:
   - 135: {fileID: 1737126075}
   - 54: {fileID: 1737126076}
   - 195: {fileID: 1737126077}
+  - 114: {fileID: 1737126078}
   m_Layer: 0
   m_Name: char_robotGuard
   m_TagString: Enemy
@@ -56992,6 +56993,20 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1737126078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737126072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37e6b85edc56e4f31834718bd32a4745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldOfViewAngle: 110
+  playerInSight: 0
+  personalLastSighting: {x: 0, y: 0, z: 0}
 --- !u!1 &1738094875
 GameObject:
   m_ObjectHideFlags: 0
